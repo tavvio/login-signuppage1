@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    outline: none;
 }
 
 body{
@@ -41,6 +42,16 @@ a{
     margin-bottom: 7%;
 }
 
+.titulo2{
+    font-size: 1.2rem;
+}
+
+.instrucao{
+    margin-bottom: 5%;
+    font-size: 0.755em;
+    color: #b6b6b6;
+}
+
 .formulario{
     display: flex;
     flex-wrap: nowrap;
@@ -52,9 +63,27 @@ a{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    width: auto 0;
 }
 
-.input-texto{
+.campo-formulario2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: auto 0;
+    gap: 4%;
+    padding: 5% 0 0 20%;
+}
+
+.rdNovidades{
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0.0055rem;
+}
+
+.form-control{
     width: 100%;
     padding: 10px 10px;
     margin: 8px 0;
@@ -64,15 +93,34 @@ a{
     font-family: 'Montserrat', sans-serif;
 }
 
+.row{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.margin-bottom{
+    border-bottom: 0.1rem solid #d4a160;
+    margin-bottom: 5%;
+    margin-top: 10%;
+}
+
 .input-texto:focus{
     border: 3px solid #d4a160;
     outline: none;
     background-color: #FFFFFF;
 }
 
-.input-texto:hover, .btnRede:hover, .btnEnviar:hover, .input-checkbox:hover, a:hover{
+.input-texto:hover, .btnRede:hover, .btnEnviar:hover, .btnEnviar2:hover, .input-checkbox:hover, a:hover{
     opacity: 80%;
     transition-duration: 200ms;
+}
+
+.input-date{
+    width: auto;
 }
 
 .redes-sociais-formulario{
@@ -134,9 +182,8 @@ a{
     justify-content: center;
 }
 
-.btnEnviar{
+.btnEnviar, .btnEnviar2{
     height: 50px;
-    width: 80px;
     outline: none;
     background-color: #d4a160;
     border: none;
@@ -144,6 +191,15 @@ a{
     font-weight: bold;
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
+}
+
+.btnEnviar{
+    width: 80px;
+}
+
+.btnEnviar2{
+    width: 110px;
+    margin-top: 10%;
 }
 
 .links-formulario{

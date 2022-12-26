@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:wght@200&family=Smokum&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/estilo1.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img class="logo-principal" src="img/logo-principal.png" alt="Logo Principal Advocacia">
+    </header>
+    <main>
+        <section class="conteudo">
+            <h1 class="titulo1">Criar uma conta</h1>
+            <form class="fomrulario">
+                <p class="instrucao">Complete o formulário com suas informações pessoais:</p>
+                <h2 class="titulo2 margin-bottom">Dados pessoais</h2>
+                <div class="row">
+                    <div class="campo-formulario">
+                        <label for="nome">Primeiro Nome</label>
+                        <input class="form-control" type="text" name="nome" id="nome">
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input class="form-control" type="text" name="sobrenome" id="sobrenome">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="campo-formulario" style="width: 47%;">
+                        <label for="cpf">CPF</label>
+                        <input class="form-control" type="number" name="cpf" id="cpf">
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="idade">Data de nascimento</label>
+                        <input class="form-control input-date" type="date" name="idade" id="idade">
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="campo-formulario">
+                        <label for="email">E-mail</label>
+                        <input class="form-control" type="email" name="email" id="email">
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="telefone">Telefone</label>
+                        <input class="form-control" type="number" name="telefone" id="telefone">
+                    </div>
+                </div>
+                <h2 class="titulo2 margin-bottom">Dados de Acesso</h2>
+                <div class="row">
+                    <div class="campo-formulario">
+                        <label for="senha">Nome de usuario</label>
+                        <input class="form-control" type="usuario" name="novo-usuario" id="novo-usuario">
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="senha">Crie uma Senha</label>
+                        <input class="form-control" type="password" name="senha" id="senha">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="campo-formulario rdNovidades" style="width: 50%; padding-bottom: 3%;">
+                        <p>Receber novidades por e-mail?</p>
+                        <div class="campo-formulario2">
+                            <input class="input-checkbox" type="radio" name="novidades" id="rdNovidades" value="sim">
+                            <label for="sim">Sim</label>
+                        </div>
+                        <div class="campo-formulario2">
+                            <input class="input-checkbox" type="radio" name="novidades" id="rdNovidades" value="nao">
+                            <label for="nao">Não</label>
+                        </div>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="senha2">Confirme sua senha</label>
+                        <input class="form-control" type="password" name="senha2" id="senha2">
+                    </div>
+                </div>
+                <div class="botao-enviar">
+                    <button class="btnEnviar2" type="submit">Cadastrar</button>
+                </div>
+            </form>
+            <div class="links-formulario" style="margin-top: 5%;">
+                <p>Já possui uma conta? <a href="index.html">Iniciar Sessão</a>.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <div class="links-rodape">
+            <a href="#">Suporte</a>
+            <a href="#">Preferências de Cookies</a>
+            <a href="#">Termos de serviço</a>
+            <a href="#">Aviso de privacidade</a>
+        </div>
+        <p class="text-footer">© 2022 Otávio Piardi, todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
